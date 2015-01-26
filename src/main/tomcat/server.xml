@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server>
+    <Service name='Catalina'>
+            <Connector port="8181" protocol="HTTP/1.1"  connectionTimeout="20000" />
+        <Engine defaultHost="localhost" name='Catalina'>
+
+        <Host name="localhost" appBase="webapps"
+                  unpackWARs="true" autoDeploy="true">
+                <Context path="/feedme" docBase="${basedir}/target/UserWebApp-0.1.war">
+                </Context>
+            </Host>
+        </Engine>
+    </Service>
+</Server>
